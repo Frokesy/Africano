@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
-    <div className="bg-[url('/assets/hero.png')] bg-no-repeat bg-cover flex items-center justify-center w-[90vw] mx-auto h-[80vh]">
-        <h2 className="text-[100px] font-semibold uppercase">New Africano</h2>
+    <div className="bg-[url('/assets/hero.png')] bg-no-repeat bg-cover flex items-center justify-center w-[90vw] mx-auto lg:h-[80vh] h-[30vh]">
+        <h2 className="lg:text-[100px] text-[42px] font-semibold uppercase">New Africano</h2>
     </div>
   )
 }
