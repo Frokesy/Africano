@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import SectionOne from "../components/SectionOne";
+import SectionTwo from "../components/SectionTwo";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Header />
       <Hero />
       <SectionOne />
+      <SectionTwo />
     </div>
   );
 };
