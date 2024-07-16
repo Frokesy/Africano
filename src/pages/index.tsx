@@ -1,3 +1,4 @@
+import About from "../components/About";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import SectionOne from "../components/SectionOne";
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <SectionOne />
       <SectionTwo />
+      <About />
     </div>
   );
 };
