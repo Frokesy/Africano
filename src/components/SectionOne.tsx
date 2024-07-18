@@ -5,9 +5,9 @@ const SectionOne = () => {
         <img src="/assets/img_one.png" alt="img" />
       </div>
 
-      <div className="w-[90vw] flex justify-between mx-auto mt-20">
-        <div className="w-[40%] space-y-10">
-          <h2 className="text-[#8c3a00] text-[48px] font-semibold uppercase">Dip into tradition</h2>
+      <div className="w-[90vw] flex lg:flex-row flex-col justify-between mx-auto mt-20">
+        <div className="lg:w-[40%] space-y-10">
+          <h2 className="text-[#8c3a00] lg:text-[48px] text-[36px] font-semibold uppercase">Dip into tradition</h2>
           <p>
             Welcome to New Africano, where we savour the rich, wholesome flavors
             of traditional homemade Nigerian cuisines. Come experience a

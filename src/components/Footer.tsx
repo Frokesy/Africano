@@ -3,11 +3,11 @@ import { Facebook, Instagram, TikTok } from "./icons";
 const Footer = () => {
   return (
     <div className="">
-      <div className="py-[20vh] w-[90vw] mx-auto flex justify-between items-center space-x-10">
-        <div className="flex flex-col w-[30%] space-y-6">
+      <div className="py-[20vh] w-[90vw] mx-auto flex lg:flex-row flex-col justify-between lg:items-center space-y-10 lg:space-y-0 lg:space-x-10">
+        <div className="flex flex-col lg:w-[30%] space-y-6">
           <div className="flex items-center space-x-1">
             <img src="/assets/logo.png" alt="logo" className="w-[30%]" />
-            <h2 className="text-[27px] font-semibold uppercase">
+            <h2 className="lg:text-[27px] text-[24px] font-semibold uppercase">
               New Africano
             </h2>
           </div>
@@ -59,9 +59,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-[90vw] mx-auto flex justify-between pb-20">
+      <div className="w-[90vw] mx-auto flex lg:flex-row flex-col lg:text-[16px] text-[14px] justify-between pb-20">
         <p>© 2024 Restaurant. All rights reserved. Design by Untree.coo</p>
-        <div className="flex items-center space-x-10">
+        <div className="flex items-center space-x-10 mt-6 lg:mt-0">
           <p>Terms of Service</p>
           <p>Privacy Policy</p>
         </div>
