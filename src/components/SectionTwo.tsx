@@ -4,11 +4,21 @@ const SectionTwo = () => {
   return (
     <div className="">
       <div className="w-[90vw] mx-auto">
-        <h2 className="lg:text-[48px] text-[32px] font-monoton text-center mt-[15vh]">
+        <h2
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+          className="lg:text-[48px] text-[32px] font-monoton text-center mt-[15vh]"
+        >
           Let&apos;s serve you
         </h2>
         <div className="flex justify-between lg:flex-row flex-col lg:space-x-20 space-y-20 lg:space-y-0 mt-10">
-          <div className="flex flex-col items-center lg:w-[30%] text-center space-y-3">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            className="flex flex-col items-center lg:w-[30%] text-center space-y-3"
+          >
             <ChickenMeal />
             <h2 className="lg:text-[32px] text-[26px] text-[#e05d00] font-semibold">
               Tasty Delicious
@@ -18,7 +28,12 @@ const SectionTwo = () => {
               one more”
             </span>
           </div>
-          <div className="flex flex-col items-center lg:w-[30%] text-center space-y-3">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-offset="200"
+            className="flex flex-col items-center lg:w-[30%] text-center space-y-3"
+          >
             <Chef />
             <h2 className="lg:text-[32px] text-[26px] text-[#e05d00] font-semibold">
               Best Chefs
@@ -28,7 +43,12 @@ const SectionTwo = () => {
               tradition on a plate.
             </span>
           </div>
-          <div className="flex flex-col items-center lg:w-[30%] text-center space-y-3">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1400"
+            data-aos-offset="200"
+            className="flex flex-col items-center lg:w-[30%] text-center space-y-3"
+          >
             <HomeDelivery />
             <h2 className="lg:text-[32px] text-[26px] text-[#e05d00] font-semibold">
               Home Delivery
@@ -42,14 +62,20 @@ const SectionTwo = () => {
       </div>
 
       <div className="mt-20 w-[90vw] mx-auto pt-[6vh] pb-[15vh] px-[6vw] bg-[#fff] relative">
-        <h2 className="text-[#e05d00] pb-6 lg:text-[48px] text-[32px] font-monoton">Menu</h2>
+        <h2 className="text-[#e05d00] pb-6 lg:text-[48px] text-[32px] font-monoton">
+          Menu
+        </h2>
         <div className="flex lg:flex-row flex-col justify-between">
           <div className="">
             <img src="/assets/menu.png" alt="menu" />
 
             <div className="lg:space-x-20 space-x-10 mb-20 lg:mb-0 mt-10 lg:text-[16px] text-[13px] flex items-center justify-center">
-              <button className="bg-[#e05d00] py-2 px-4 rounded-lg">Download menu</button>
-              <button className="bg-[#e05d00] py-2 px-4 rounded-lg">Order Now</button>
+              <button className="bg-[#e05d00] py-2 px-4 rounded-lg">
+                Download menu
+              </button>
+              <button className="bg-[#e05d00] py-2 px-4 rounded-lg">
+                Order Now
+              </button>
             </div>
           </div>
           <div className="flex-col flex space-y-6">

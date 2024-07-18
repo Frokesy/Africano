@@ -3,10 +3,24 @@ import { Email, Location, Phone } from "./icons";
 const Contact = () => {
   return (
     <div className="w-[90vw] mx-auto pt-[10vh]">
-        <div className="">
-            <h2 className="lg:text-[48px] text-[32px] font-monoton mb-3">Contact Us</h2>
-            <p className="font-bold text-[20px] mb-3">Get in touch with us</p>
-        </div>
+      <div className="">
+        <h2
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+          className="lg:text-[48px] text-[32px] font-monoton mb-3"
+        >
+          Contact Us
+        </h2>
+        <p
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          data-aos-offset="200"
+          className="font-bold text-[20px] mb-3"
+        >
+          Get in touch with us
+        </p>
+      </div>
       <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-20 gap-6">
         <div
           data-aos="fade-up"
