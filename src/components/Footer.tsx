@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col lg:w-[30%] space-y-6">
           <div className="flex items-center space-x-1">
             <img src="/assets/logo.png" alt="logo" className="w-[30%]" />
-            <h2 className="lg:text-[27px] text-[24px] font-semibold uppercase">
+            <h2 className="lg:text-[27px] text-[24px] font-monoton">
               New Africano
             </h2>
           </div>
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-[90vw] mx-auto flex lg:flex-row flex-col lg:text-[16px] text-[14px] justify-between pb-20">
+      <div className="w-[90vw] mx-auto flex lg:flex-row flex-col lg:text-[16px] text-[14px] items-center justify-between pb-20">
         <p>© 2024 Restaurant. All rights reserved. Design by Untree.coo</p>
         <div className="flex items-center space-x-10 mt-6 lg:mt-0">
           <p>Terms of Service</p>

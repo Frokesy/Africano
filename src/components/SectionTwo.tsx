@@ -4,7 +4,7 @@ const SectionTwo = () => {
   return (
     <div className="">
       <div className="w-[90vw] mx-auto">
-        <h2 className="lg:text-[48px] text-[32px] uppercase font-semibold text-center mt-[15vh]">
+        <h2 className="lg:text-[48px] text-[32px] font-monoton text-center mt-[15vh]">
           Let&apos;s serve you
         </h2>
         <div className="flex justify-between lg:flex-row flex-col lg:space-x-20 space-y-20 lg:space-y-0 mt-10">
@@ -42,7 +42,7 @@ const SectionTwo = () => {
       </div>
 
       <div className="mt-20 w-[90vw] mx-auto pt-[6vh] pb-[15vh] px-[6vw] bg-[#fff] relative">
-        <h2 className="text-[#e05d00] pb-6 lg:text-[48px] text-[32px] uppercase">Home</h2>
+        <h2 className="text-[#e05d00] pb-6 lg:text-[48px] text-[32px] font-monoton">Menu</h2>
         <div className="flex lg:flex-row flex-col justify-between">
           <div className="">
             <img src="/assets/menu.png" alt="menu" />
