@@ -1,11 +1,19 @@
 import { Naira } from "./icons";
-import { Dispatch, FC, SetStateAction } from "react";
+import { Dispatch, FC, SetStateAction, useState } from "react";
 
 interface MenuProps {
   openModal: Dispatch<SetStateAction<boolean>>;
 }
 
+interface Item {
+  id: number;
+  name: string;
+  price: string;
+}
+
 const OrderItems: FC<MenuProps> = ({ openModal }) => {
+  const [selectedItems, setSelectedItems] = useState<Item[]>([]);
+
   const friedBushmeat = [
     { id: 1, name: "Oya (Grasscutter)", price: "3,000 per plate" },
     { id: 2, name: "full oya", price: "30,000 - 40,000" },
@@ -59,6 +67,22 @@ const OrderItems: FC<MenuProps> = ({ openModal }) => {
     { id: 3, name: "full 5 liters", price: "5,000" },
     { id: 4, name: "full 10 liters", price: "1,500" },
   ];
+
+  const handleItemSelection = (item: Item, isChecked: boolean) => {
+    if (isChecked) {
+      setSelectedItems([...selectedItems, item]);
+    } else {
+      setSelectedItems(selectedItems.filter(selectedItem => selectedItem.id !== item.id));
+    }
+  };
+
+  const handleOrderNow = () => {
+    const orderMessage = selectedItems.map(item => `${item.name} - ${item.price}`).join(', ');
+    const message = encodeURIComponent(`New Order details: ${orderMessage}`);
+    const phoneNumber = '2348148175713';
+    const url = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.location.href = url;
+  };
   return (
     <div className="mt-[15vh] mx-auto w-[90vw]">
       <h2 className="lg:text-[48px] text-[#8c3a00] text-[32px] font-monoton mb-10">
@@ -66,37 +90,31 @@ const OrderItems: FC<MenuProps> = ({ openModal }) => {
       </h2>
       <div className="mt-10 flex justify-between space-x-10">
         <div className="w-[35%]">
-          <h2 className="text-[24px] uppercase font-bold">
-            Fried & Peppered Bushmeat
-          </h2>
-
+          <h2 className="text-[24px] uppercase font-bold">Fried & Peppered Bushmeat</h2>
           <div className="space-y-3 mt-4">
-            {friedBushmeat.map((item) => (
-              <div
-                key={item.id}
-                className="flex justify-between uppercase items-center w-[100%]"
-              >
+            {friedBushmeat.map(item => (
+              <div key={item.id} className="flex justify-between uppercase items-center w-[100%]">
                 <h3>{item.name}</h3>
                 <div className="flex items-center space-x-8">
                   <p className="flex items-center space-x-1">
                     <Naira /> <span className="mt-1">{item.price}</span>
                   </p>
-                  <input type="checkbox" name="" id="" className="scale-150" />
+                  <input
+                    type="checkbox"
+                    className="scale-150"
+                    onChange={(e) => handleItemSelection(item, e.target.checked)}
+                  />
                 </div>
               </div>
             ))}
           </div>
         </div>
         <div className="w-[55%] space-y-8">
-          <div className="">
+          <div>
             <h2 className="text-[24px] uppercase font-bold">Roasted Dishes</h2>
-
             <div className="space-y-3 mt-4">
-              {roastedDishes.map((item) => (
-                <div
-                  key={item.id}
-                  className="flex justify-between uppercase items-center w-[100%]"
-                >
+              {roastedDishes.map(item => (
+                <div key={item.id} className="flex justify-between uppercase items-center w-[100%]">
                   <h3>{item.name}</h3>
                   <div className="flex items-center space-x-8">
                     <p className="flex items-center space-x-1">
@@ -104,9 +122,8 @@ const OrderItems: FC<MenuProps> = ({ openModal }) => {
                     </p>
                     <input
                       type="checkbox"
-                      name=""
-                      id=""
                       className="scale-150"
+                      onChange={(e) => handleItemSelection(item, e.target.checked)}
                     />
                   </div>
                 </div>
@@ -116,15 +133,11 @@ const OrderItems: FC<MenuProps> = ({ openModal }) => {
 
           <div className="border-b-2 border-[#e05d00]"></div>
 
-          <div className="">
-            <h2 className="text-[24px] uppercase font-bold">Roasted Dishes</h2>
-
+          <div>
+            <h2 className="text-[24px] uppercase font-bold">Other Dishes</h2>
             <div className="space-y-3 mt-4">
-              {others.map((item) => (
-                <div
-                  key={item.id}
-                  className="flex justify-between uppercase items-center w-[100%]"
-                >
+              {others.map(item => (
+                <div key={item.id} className="flex justify-between uppercase items-center w-[100%]">
                   <h3>{item.name}</h3>
                   <div className="flex items-center space-x-8">
                     <p className="flex items-center space-x-1">
@@ -132,9 +145,8 @@ const OrderItems: FC<MenuProps> = ({ openModal }) => {
                     </p>
                     <input
                       type="checkbox"
-                      name=""
-                      id=""
                       className="scale-150"
+                      onChange={(e) => handleItemSelection(item, e.target.checked)}
                     />
                   </div>
                 </div>
@@ -144,15 +156,11 @@ const OrderItems: FC<MenuProps> = ({ openModal }) => {
 
           <div className="border-b-2 border-[#e05d00]"></div>
 
-          <div className="">
-            <h2 className="text-[24px] uppercase font-bold">Roasted Dishes</h2>
-
+          <div>
+            <h2 className="text-[24px] uppercase font-bold">Palmwine</h2>
             <div className="space-y-3 mt-4">
-              {palmwine.map((item) => (
-                <div
-                  key={item.id}
-                  className="flex justify-between uppercase items-center w-[100%]"
-                >
+              {palmwine.map(item => (
+                <div key={item.id} className="flex justify-between uppercase items-center w-[100%]">
                   <h3>{item.name}</h3>
                   <div className="flex items-center space-x-8">
                     <p className="flex items-center space-x-1">
@@ -160,9 +168,8 @@ const OrderItems: FC<MenuProps> = ({ openModal }) => {
                     </p>
                     <input
                       type="checkbox"
-                      name=""
-                      id=""
                       className="scale-150"
+                      onChange={(e) => handleItemSelection(item, e.target.checked)}
                     />
                   </div>
                 </div>
@@ -171,7 +178,10 @@ const OrderItems: FC<MenuProps> = ({ openModal }) => {
           </div>
 
           <div className="space-x-10 mb-20 lg:mb-0 pt-10 lg:text-[16px] text-[13px] flex items-center justify-end">
-            <button className="bg-[#e05d00] py-2 px-4 rounded-lg">
+            <button
+              onClick={handleOrderNow}
+              className="bg-[#e05d00] py-2 px-4 rounded-lg"
+            >
               Place Order
             </button>
             <button
