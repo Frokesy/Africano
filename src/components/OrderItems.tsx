@@ -85,13 +85,13 @@ const OrderItems: FC<MenuProps> = ({ openModal }) => {
   };
   return (
     <div className="mt-[15vh] mx-auto w-[90vw]">
-      <h2 className="lg:text-[48px] text-[#8c3a00] text-[32px] font-monoton mb-10">
+      <h2 className="lg:text-[48px] text-[#8c3a00] text-[32px] font-monoton lg:mb-10">
         Menu
       </h2>
-      <div className="mt-10 flex justify-between space-x-10">
-        <div className="w-[35%]">
-          <h2 className="text-[24px] uppercase font-bold">Fried & Peppered Bushmeat</h2>
-          <div className="space-y-3 mt-4">
+      <div className="lg:mt-10 flex lg:flex-row flex-col justify-between lg:space-x-10">
+        <div className="lg:w-[35%]">
+          <h2 className="lg:text-[24px] text-[20px] uppercase font-bold mt-16 lg:mt-0">Fried & Peppered Bushmeat</h2>
+          <div className="lg:space-y-3 space-y-8 mt-4 lg:text-[16px] text-[12px]">
             {friedBushmeat.map(item => (
               <div key={item.id} className="flex justify-between uppercase items-center w-[100%]">
                 <h3>{item.name}</h3>
@@ -109,13 +109,13 @@ const OrderItems: FC<MenuProps> = ({ openModal }) => {
             ))}
           </div>
         </div>
-        <div className="w-[55%] space-y-8">
+        <div className="lg:w-[55%] space-y-8">
           <div>
-            <h2 className="text-[24px] uppercase font-bold">Roasted Dishes</h2>
-            <div className="space-y-3 mt-4">
+            <h2 className="lg:text-[24px] text-[20px] uppercase font-bold mt-16 lg:mt-0">Roasted Dishes</h2>
+            <div className="lg:space-y-3 space-y-8 mt-4 lg:text-[16px] text-[12px]">
               {roastedDishes.map(item => (
                 <div key={item.id} className="flex justify-between uppercase items-center w-[100%]">
-                  <h3>{item.name}</h3>
+                  <h3 className="w-[55%] lg:w-[100%]">{item.name}</h3>
                   <div className="flex items-center space-x-8">
                     <p className="flex items-center space-x-1">
                       <Naira /> <span className="mt-1">{item.price}</span>
@@ -134,8 +134,8 @@ const OrderItems: FC<MenuProps> = ({ openModal }) => {
           <div className="border-b-2 border-[#e05d00]"></div>
 
           <div>
-            <h2 className="text-[24px] uppercase font-bold">Other Dishes</h2>
-            <div className="space-y-3 mt-4">
+            <h2 className="lg:text-[24px] text-[20px] uppercase font-bold mt-16 lg:mt-0">Other Dishes</h2>
+            <div className="lg:space-y-3 space-y-8 mt-4 lg:text-[16px] text-[12px]">
               {others.map(item => (
                 <div key={item.id} className="flex justify-between uppercase items-center w-[100%]">
                   <h3>{item.name}</h3>
@@ -157,8 +157,8 @@ const OrderItems: FC<MenuProps> = ({ openModal }) => {
           <div className="border-b-2 border-[#e05d00]"></div>
 
           <div>
-            <h2 className="text-[24px] uppercase font-bold">Palmwine</h2>
-            <div className="space-y-3 mt-4">
+            <h2 className="lg:text-[24px] text-[20px] uppercase font-bold mt-16 lg:mt-0">Palmwine</h2>
+            <div className="lg:space-y-3 space-y-8 mt-4 lg:text-[16px] text-[12px]">
               {palmwine.map(item => (
                 <div key={item.id} className="flex justify-between uppercase items-center w-[100%]">
                   <h3>{item.name}</h3>

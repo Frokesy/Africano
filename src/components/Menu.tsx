@@ -26,7 +26,7 @@ const Menu: FC<MenuProps> = ({ openModal }) => {
         <h2 className="text-[#e05d00] pb-6 lg:text-[48px] text-[32px] font-monoton">
           Menu
         </h2>
-        <div className="flex lg:flex-row flex-col justify-between">
+        <div className="flex lg:flex-row flex-col space-x-10 justify-between">
           <div className="">
             <img src="/assets/menu.png" alt="menu" id="menuImage" />
 
