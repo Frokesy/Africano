@@ -5,7 +5,8 @@ const SectionOne = () => {
         data-aos="fade-left"
         data-aos-duration="1000"
         data-aos-offset="200"
-        className="flex justify-end mt-20"
+        id="services"
+        className="flex justify-end pt-20"
       >
         <img src="/assets/img_one.png" alt="img" />
       </div>

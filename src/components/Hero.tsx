@@ -7,7 +7,7 @@ const Hero = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div className="z-10">
+    <div id="home" className="z-10">
       <div
         data-aos="zoom-in"
         data-aos-duration="1000"

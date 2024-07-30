@@ -21,7 +21,7 @@ const Menu: FC<MenuProps> = ({ openModal }) => {
   };
 
   return (
-    <div className="">
+    <div className="" id="menu">
       <div className="mt-20 w-[90vw] mx-auto pt-[6vh] pb-[15vh] px-[6vw] bg-[#fff] relative">
         <h2 className="text-[#e05d00] pb-6 lg:text-[48px] text-[32px] font-monoton">
           Menu

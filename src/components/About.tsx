@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="w-[90vw] mx-auto py-[10vh]">
+    <div className="w-[90vw] mx-auto py-[10vh]" id="about">
       <h2
         data-aos="zoom-in"
         data-aos-duration="1000"
