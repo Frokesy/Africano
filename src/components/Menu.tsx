@@ -28,7 +28,7 @@ const Menu: FC<MenuProps> = ({ openModal }) => {
         </h2>
         <div className="flex lg:flex-row flex-col lg:space-x-10 justify-between">
           <div className="">
-            <img src="/assets/menu.png" alt="menu" id="menuImage" />
+            <img src="/assets/menu.jpg" alt="menu" id="menuImage" />
 
             <div className="lg:space-x-20 space-x-10 mb-20 lg:mb-0 mt-10 lg:text-[16px] text-[13px] flex items-center justify-center">
               <button
