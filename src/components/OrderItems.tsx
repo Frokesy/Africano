@@ -79,7 +79,7 @@ const OrderItems: FC<MenuProps> = ({ openModal }) => {
   const handleOrderNow = () => {
     const orderMessage = selectedItems.map(item => `${item.name} - ${item.price}`).join(', ');
     const message = encodeURIComponent(`New Order details: ${orderMessage}`);
-    const phoneNumber = '2348148175713';
+    const phoneNumber = '2347081582292';
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.location.href = url;
   };

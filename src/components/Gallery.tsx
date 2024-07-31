@@ -1,6 +1,6 @@
 const Gallery = () => {
   return (
-    <div className="py-[10vh]">
+    <div className="py-[10vh]" id="gallery">
       <h2
         data-aos="zoom-in"
         data-aos-duration="1000"

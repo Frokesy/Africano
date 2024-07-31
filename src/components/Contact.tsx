@@ -43,7 +43,7 @@ const Contact = () => {
           <Location />
           <h2 className="text-[18px] font-semibold">Visit Us</h2>
           <p>Visit our Restaurant</p>
-          <p>100 Smith Street Collingwood VIC 3066 AU</p>
+          <p>Olatemiwunmi complex behind dominos pizza, Akobo police station, Ibadan</p>
         </div>
 
         <div
@@ -55,7 +55,7 @@ const Contact = () => {
           <Phone />
           <h2 className="text-[18px] font-semibold">Call Us</h2>
           <p className="pb-3">To make enquiries</p>
-          <p>+234 812 345 6789</p>
+          <p>+234 707 729 2662</p>
         </div>
       </div>
     </div>

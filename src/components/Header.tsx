@@ -40,6 +40,7 @@ const Header = () => {
         <img src="/assets/logo.png" alt="img" className="" />
         <div className="lg:flex hidden items-center space-x-10 font-semibold text-[14px]">
           <a href="#home">Home</a>
+          <a href="#gallery">Gallery</a>
           <a href="#services">Services</a>
           <a href="#menu">Menu</a>
           <a href="#about">About us</a>
