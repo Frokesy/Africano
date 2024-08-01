@@ -24,7 +24,7 @@ const Modal: FC<ModalProps> = ({ selectedImg, setSelectedImg }) => {
         >
           &times;
         </button>
-        <img src={selectedImg} alt="enlarged pic" className="lg:w-[500px] lg:h-[400px]" />
+        <img src={selectedImg} alt="enlarged pic" className="lg:w-[500px] lg:h-[400px] w-[330px] h-[232px]" />
       </div>
     </motion.div>
   );
