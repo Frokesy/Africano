@@ -1,3 +1,4 @@
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -24,6 +25,14 @@ const Home = () => {
       <Gallery />
       <Contact />
       <Footer />
+      <FloatingWhatsApp
+        phoneNumber="+2347081582292"
+        accountName="New Africano"
+        avatar="/assets/logo.png"
+        darkMode
+        allowClickAway
+        allowEsc
+    />
     </div>
   );
 };
