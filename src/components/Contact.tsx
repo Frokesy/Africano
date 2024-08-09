@@ -31,7 +31,9 @@ const Contact = () => {
           <Email />
           <h2 className="text-[18px] font-semibold">Message Us</h2>
           <p className="pb-3">CHat with us to place your order</p>
-          <a href="mailto:goatcloudstech@gmail.com">africanofoods@gmail.com</a>
+          <a href="mailto:customerservice@newafricanobar.com.ng">
+            customerservice@newafricanobar.com.ng
+          </a>
         </div>
 
         <div
@@ -43,7 +45,10 @@ const Contact = () => {
           <Location />
           <h2 className="text-[18px] font-semibold">Visit Us</h2>
           <p>Visit our Restaurant</p>
-          <p>Olatemiwunmi complex behind dominos pizza, Akobo police station, Ibadan</p>
+          <p>
+            Olatemiwunmi complex behind dominos pizza, Akobo police station,
+            Ibadan
+          </p>
         </div>
 
         <div
